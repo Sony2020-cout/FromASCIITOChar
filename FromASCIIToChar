@@ -12,8 +12,8 @@ void nameOfProgramm() {
     cout << endl;
     
 }
-
-void fromASCIIValToChar() {
+//fromASCIIValToChar
+void drawTableASCII() {
     
 
     int c;
@@ -24,18 +24,42 @@ void fromASCIIValToChar() {
     }
 }
 
+void fromASCIIValToChar() {
+
+    int symbolValue;
+
+    cout << "Insert value for drawing character: ";
+
+    cin >> symbolValue;
+
+    while (symbolValue < 0) {
+        cout << "Insert value more or equal to null" << endl;
+        break;
+    }
+
+    if (symbolValue >= 0) {
+        //создать массив для ввода значений с клавиатуры
+        //из массива выводить конечный рисунок
+        cout << (char)symbolValue << endl;
+    }
+   
+
+   
+
+}
+
 
 
 
 int main()
 {
     nameOfProgramm();
+    drawTableASCII();
     fromASCIIValToChar();
+
 
 
     system("pause");
     return 0;
 
 }
-
-
